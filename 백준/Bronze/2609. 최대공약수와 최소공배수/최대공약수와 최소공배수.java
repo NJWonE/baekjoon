@@ -10,11 +10,9 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
-        int[] numArray = {a,b};
-        Arrays.sort(numArray);
-        int gcd = greatestCommonDivisor(numArray[0], numArray[1]);
+        int gcd = greatestCommonDivisor(a, b);
         System.out.println(gcd);
-        System.out.println(greatestCommonMultiple(numArray[0],numArray[1], gcd));
+        System.out.println(greatestCommonMultiple(a,b, gcd));
     }
 
     public int greatestCommonDivisor(int a, int b){
