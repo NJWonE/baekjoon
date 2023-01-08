@@ -19,7 +19,7 @@ public class Main {
         m = Integer.parseInt(st.nextToken());
         k = Integer.parseInt(st.nextToken());
         num = new int[n][m];
-        check = new boolean[n+1][m+1];
+        check = new boolean[n][m];
         for(int i = 0; i<n; i++){
             st = new StringTokenizer(br.readLine());
             for(int j = 0; j<m; j++){
